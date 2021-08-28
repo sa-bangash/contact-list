@@ -1,0 +1,33 @@
+$background-colo:#faf9ff;
+$menu-color:#8183a3;
+$border-color:#f5f6fa;
+@mixin d-f-j-a-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.mr-t-10 {
+    margin-top: 10px;
+}
+
+.mr-b-10 {
+    margin-bottom: 10px;
+}

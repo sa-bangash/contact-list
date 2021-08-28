@@ -1,0 +1,132 @@
+<div class="detail-wrapper" *ngIf="detail$ | async as detail">
+  <div class="back" (click)="onHide()">
+    <img src="../../../assets/left-Arrow.svg" alt="" />
+  </div>
+  <div class="profile-wrap d-flex">
+    <div class="profile-img">
+      <img [src]="detail.image" alt="" />
+    </div>
+    <div class="pro-content">
+      <div class="pro-title">
+        <h2>{{ detail.name }}</h2>
+        <p>{{ detail.profession }}</p>
+      </div>
+      <div class="pro-btns-wrap d-flex justify-content-between">
+        <button class="message-btn">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.0443 8C12.0443 8.21094 11.9623 8.38672 11.7982 8.52734C11.6576 8.66797 11.4818 8.73828 11.2709 8.73828H3.78259L0.794312 11.7617V1.25C0.794312 1.03906 0.864624 0.863281 1.00525 0.722656C1.14587 0.582031 1.32166 0.511719 1.53259 0.511719H11.2709C11.4818 0.511719 11.6576 0.582031 11.7982 0.722656C11.9623 0.863281 12.0443 1.03906 12.0443 1.25V8ZM15.0326 3.5C15.2435 3.5 15.4193 3.57031 15.5599 3.71094C15.7006 3.85156 15.7709 4.02734 15.7709 4.23828V15.4883L12.7826 12.5H4.52087C4.30994 12.5 4.13416 12.4297 3.99353 12.2891C3.85291 12.1484 3.78259 11.9727 3.78259 11.7617V10.25H13.5209V3.5H15.0326Z"
+              fill="white"
+            />
+          </svg>
+          Message
+        </button>
+        <button class="pro-btn">
+          <img src="../../../assets/call.svg" alt="" />
+        </button>
+        <button class="pro-btn">
+          <img src="../../../assets/upload.svg" alt="" />
+        </button>
+        <button class="pro-btn">
+          <img src="../../../assets/three-dotes.svg" alt="" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-content">
+    <ul class="list-group">
+      <li class="list-group-item list-item d-flex align-items-start">
+        <div class="item-name text-right">
+          <p>bio</p>
+        </div>
+
+        <div class="detail-info">
+          <p>
+            When I first got into the advertising, I was looking for the magical
+            combination that would put website into the top search engine
+            rankings
+          </p>
+        </div>
+      </li>
+      <li class="list-group-item list-item d-flex align-items-start mr-t-10">
+        <div class="item-name text-right">
+          <p>Email</p>
+        </div>
+        <div class="detail-info d-flex justify-content-between">
+          <div class="d-flex flex-column">
+            <a class="mr-b-10">johanna.stevens@gmail.com</a>
+            <a>johanna.stevens@whiteui.store</a>
+          </div>
+          <button class="primary-button">Primary</button>
+        </div>
+      </li>
+      <li class="list-group-item list-item d-flex align-items-start">
+        <div class="item-name text-right">
+          <p>Dial</p>
+        </div>
+
+        <div class="detail-info d-flex justify-content-between">
+          <div>
+            <a href=""> j.stevens@ymsg.com </a>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item list-item d-flex align-items-start">
+        <div class="item-name text-right">
+          <p>Meeting</p>
+        </div>
+
+        <div class="detail-info d-flex justify-content-between">
+          <div>
+            <a>http://go.betacall.com/meet/j.stevens</a>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item list-item d-flex align-items-start">
+        <div class="item-name text-right">
+          <p>Phone</p>
+        </div>
+
+        <div class="detail-info d-flex justify-content-between">
+          <div class="d-flex flex-column">
+            <p class="mr-b-10">439-582-1578</p>
+            <p>621-770-7689</p>
+          </div>
+          <button class="primary-button">Primary</button>
+        </div>
+      </li>
+      <li class="list-group-item list-item d-flex align-items-start">
+        <div class="item-name text-right">
+          <p>Phone</p>
+        </div>
+
+        <div class="detail-info">
+          <div class="social-wrap justify-content-between d-flex">
+            <button class="social-button">
+              <img src="../../../assets/fb.svg" alt="" />
+            </button>
+            <button class="social-button">
+              <img src="../../../assets/pin.svg" alt="" />
+            </button>
+            <button class="social-button">
+              <img src="../../../assets/tw.svg" alt="" />
+            </button>
+            <button class="social-button">
+              <img src="../../../assets/ln.svg" alt="" />
+            </button>
+            <button class="social-button">
+              <img src="../../../assets/g.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

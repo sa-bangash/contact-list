@@ -1,0 +1,37 @@
+<div class="contect-list">
+  <ul class="list-group">
+    <li
+      *ngFor="let contact of list$ | async"
+      class="
+        list-group-item list-item
+        d-flex
+        align-items-center
+        justify-content-between
+      "
+      [routerLink]="[contact.id]"
+      (click)="onShowDetailPanel()"
+    >
+      <div class="d-flex">
+        <div class="list-profile">
+          <img [src]="contact.image" alt="" />
+          <div class="dot"></div>
+        </div>
+        <div class="list-title">
+          <h3>{{ contact.name }}</h3>
+          <p>{{ contact.profession }}</p>
+        </div>
+      </div>
+      <div class="list-btns-wrap d-flex justify-content-between">
+        <button class="list-btn">
+          <img src="../../../assets/messages.svg" alt="" />
+        </button>
+        <button class="list-btn">
+          <img src="../../../assets/call.svg" alt="" />
+        </button>
+        <button class="list-btn">
+          <img src="../../../assets/three-dotes.svg" alt="" />
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>

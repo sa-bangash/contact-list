@@ -1,0 +1,88 @@
+$background-colo: #faf9ff;
+$menu-color: #8183a3;
+$border-color: #f5f6fa;
+@mixin d-f-j-a-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contect-list {
+  padding: 0px 36px 34px 36px;
+  .list-item {
+    cursor: pointer;
+    height: 68px;
+    border-radius: 12px;
+    border: none;
+    border-radius: 12px;
+    background-color: transparent;
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+    .list-profile {
+      height: 36px;
+      width: 36px;
+      border-radius: 10px;
+      position: relative;
+      .dot {
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        left: 25px;
+        top: calc(45% - 8px / 2 + 16px);
+        background: #28c345;
+        border: 2px solid white;
+        border-radius: 20px;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .list-title {
+      margin-left: 18px;
+      h3 {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        color: #1a1c1d;
+      }
+      p {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        color: #8083a3;
+      }
+    }
+    .list-btns-wrap {
+      width: 126px;
+      .list-btn {
+        @include d-f-j-a-center;
+        height: 36px;
+        width: 36px;
+        background: #ffffff;
+        border: 1px solid #eceef5;
+        box-sizing: border-box;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contect-list {
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .contect-list {
+    padding: 0px 36px 34px 36px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .contect-list {
+    padding: 0px;
+  }
+}
